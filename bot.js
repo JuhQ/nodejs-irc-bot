@@ -142,8 +142,8 @@ bot.addListener("error", function(message) {
 
 // Listen for any message, PM said user when he posts
 bot.addListener("message", function(from, to, text, message) {
-
-  if(text.toLowerCase() === "op" /* || text.toLowerCase() === "opall" */ ) {
+  text = text.toLowerCase();
+  if(text === "op" /* || text === "opall" */ ) {
     actions.callback = function() {
       console.log("YAYAYAYAY")
       if(this[from] === "@" || !actions.botHasOps) {
@@ -153,7 +153,7 @@ bot.addListener("message", function(from, to, text, message) {
         return;
       }
 
-      if(text.toLowerCase() === "op") {
+      if(text === "op") {
         oplist.forEach(function(user) {
           if(from === user.nick && message.prefix === user.prefix) {
             actions.opUser(user, to);
@@ -161,7 +161,7 @@ bot.addListener("message", function(from, to, text, message) {
         });
       }
       /*
-      if(text.toLowerCase() === "opall") {
+      if(text === "opall") {
         console.log("OP ALL")
         actions.opAll(to, this);
       }
@@ -170,5 +170,18 @@ bot.addListener("message", function(from, to, text, message) {
 
 
     actions.names(to);
+    return;
   }
+
+  var commands = text.split(" ");
+  if(commands[0] === "join") {
+    var channel = commands[1];
+    bot.join(channel);
+    return;
+  }
+
+
+  console.log("MESSAGE was received but not understoow:", text);
+
+
 });
