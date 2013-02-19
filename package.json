@@ -1,0 +1,17 @@
+{
+  "name": "ircbot",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "grunt": "~0.4.0",
+    "irc": "*"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.0",
+    "grunt-contrib-coffee": "~0.4.0rc7",
+    "grunt-contrib-watch": "~0.1.4"
+  }
+}

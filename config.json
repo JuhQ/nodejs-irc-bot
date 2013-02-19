@@ -1,0 +1,12 @@
+{
+    "channels": ["#ex-city", "#715517.biz", "#woopwoop"],
+    "channels-invalid": ["#woopwoop", "#woopwoop2"],
+    "server": "irc.cc.tut.fi",
+    "botName": "juhabot",
+    "userName": "juhabot",
+    "realName": "asdf",
+    "autoRejoin": true,
+    "showErrors": true,
+    "port": 6667,
+    "debug": true
+}

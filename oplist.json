@@ -1,0 +1,32 @@
+[
+    {
+        "nick": "juhabot",
+        "channels": "all",
+        "prefix": "juha!juha@164.215.37.53"
+    },
+    {
+        "nick": "juhabot1",
+        "channels": "all",
+        "prefix": "juha!juha@164.215.37.53"
+    },
+    {
+        "nick": "juha",
+        "channels": "all",
+        "prefix": "juha!~juha@zulu961.startdedicated.com"
+    },
+    {
+        "nick": "murmanskmurmel",
+        "channels": ["#ex-city"],
+        "prefix": "murmanskmurmel!~del@eagleflow.fi"
+    },
+    {
+        "nick": "Pikseli",
+        "channels": ["#ex-city"],
+        "prefix": "Pikseli!pikseli@kapsi.fi"
+    },
+    {
+        "nick": "unkhz",
+        "channels": ["#ex-city"],
+        "prefix": "unkhz!~un@khz.fi"
+    }
+]
